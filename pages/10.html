@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const filas = parseInt(prompt("Ingrese el numero de filas"));
+        const columnas = parseInt(prompt("Ingrese un numero de columnas"));
+        let resultado = filas * columnas;
+
+        document.write("<table> <tbody>")
+            for (let indiceFila = 0;indiceFila < filas;indiceFila++) {
+                document.write("<tr>")
+                for (let indiceColumna = 0; indiceColumna < columnas; indiceColumna++) {
+                    document.write("<td>"+ resultado + "<td>");
+                    resultado--;
+                }
+                document.write("</tr>")
+            }
+        document.write("</tbody></table>")
+    </script>
+</body>
+</html>
