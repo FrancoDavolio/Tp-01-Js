@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numrep = parseInt(prompt("Introduce numero de repeticiones"));
+
+        if (Number(numrep) == numrep) {
+            if (numrep > 0 && numrep <= 50) {
+                let rep, i;
+                for (i = numrep; i >= 1; i--) {
+                    for (rep = i; rep >= 1; rep--) {
+                        document.write(i);
+                    }
+                    document.write("<br>");
+                }
+            }else {
+                alert("El número introducido no es válido");
+            }
+        }else {
+            alert("No has introducido un número");
+        }
+        
+    </script>
+</body>
+
+</html>
