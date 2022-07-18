@@ -3,9 +3,9 @@ let letra = " ";
 
 do {
   let dni = parseInt(prompt("Ingrese su DNI"));
-  if (dni != Number(dni)){
+  if (dni != Number(dni)) {
     alert("No es un numero");
-  }else if (dni > 0 && dni < 99999999) {
+  } else if (dni > 0 && dni < 99999999) {
     resto = dni % 23;
   }
   switch (resto) {
@@ -83,5 +83,3 @@ do {
   }
   document.write("Su DNI es " + dni + " y la letra es " + letra);
 } while (dni != undefined);
-
-

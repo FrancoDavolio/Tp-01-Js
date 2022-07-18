@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         let numrep = parseInt(prompt("Introduce numero de repeticiones"));
         if (Number(numrep) == numrep) {
             if (numrep > 0 && numrep <= 50) {
-                let rep,i;
+                let rep, i;
                 for (i = 0; i <= numrep; i++) {
                     for (rep = 1; rep <= i; rep++) {
                         document.write(rep);
@@ -24,6 +26,7 @@
         } else {
             alert("No has introducido un número");
         }
-        </script>
+    </script>
 </body>
+
 </html>
